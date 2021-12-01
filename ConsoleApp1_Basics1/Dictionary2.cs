@@ -65,7 +65,16 @@ namespace ConsoleApp1_Basics1
                 Console.WriteLine("ID is "+ findcust5.ID);
                 Console.WriteLine("Value is "+ findcust5.Name);
             }
-            
+            Console.ResetColor();
+            Customer custer;
+            if(obj.dictionarycustomers1.TryGetValue(12, out custer))
+            {
+                Console.WriteLine("ID= {0}, Name= {1}", custer.ID, custer.Name);
+            }
+            else
+            {
+                Console.WriteLine(" Not found");
+            }
            
         }
 
