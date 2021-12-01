@@ -11,6 +11,9 @@ namespace ConsoleApp1_Basics1
             Console.WriteLine("Hello World!");
 
             Customer.Dictfun();
+            Console.WriteLine("Hello World!");
+            Dictionary2.dictfun2();
+            
         }
     }
 }
