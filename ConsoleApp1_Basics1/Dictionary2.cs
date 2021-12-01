@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 
 namespace ConsoleApp1_Basics1
@@ -75,7 +76,10 @@ namespace ConsoleApp1_Basics1
             {
                 Console.WriteLine(" Not found");
             }
-           
+            Console.ForegroundColor=ConsoleColor.DarkMagenta;
+            Console.WriteLine("Total Items= {0} " , obj.dictionarycustomers1.Count());
+            Console.ResetColor();
+
         }
 
     }
