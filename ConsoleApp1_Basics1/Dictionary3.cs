@@ -54,8 +54,6 @@ namespace ConsoleApp1_Basics1
                 Console.WriteLine(" Value is "+ cust.Name);
             }
             Console.ResetColor();
-
-
         }
 
         
