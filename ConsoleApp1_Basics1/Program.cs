@@ -13,7 +13,7 @@ namespace ConsoleApp1_Basics1
             Customer.Dictfun();
             Console.WriteLine("Hello World!");
             Dictionary2.dictfun2();
-            
+            Dictionary3.dictfun3();
         }
     }
 }
