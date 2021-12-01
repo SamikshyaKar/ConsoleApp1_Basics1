@@ -54,7 +54,26 @@ namespace ConsoleApp1_Basics1
                 Console.WriteLine(" Value is "+ cust.Name);
             }
             Console.ResetColor();
+            listcustomer.Add(cust1);
+            listcustomer.Add(cust2);
+            listcustomer.Add(cust3);
+            listcustomer.Add(cust4);
+
+            Console.ForegroundColor = ConsoleColor.DarkBlue;
+
+            Dictionary<int, Customer> dictionary1 = customerarr.ToDictionary(cust => cust.ID, cust => cust);
+
+            foreach (KeyValuePair<int, Customer> kvp in dictionary1)
+            {
+                Console.WriteLine(" Key is " + kvp.Key);
+                Customer cust = kvp.Value;
+                Console.WriteLine(" Value is " + cust.Name);
+            }
+
+            Console.ResetColor();
         }
+
+       static List<Customer> listcustomer = new List<Customer>();
 
         
     }
