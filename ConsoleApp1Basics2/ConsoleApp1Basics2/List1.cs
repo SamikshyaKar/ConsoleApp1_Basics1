@@ -95,6 +95,36 @@ namespace ConsoleApp1Basics2
                 Console.Write(i + " ");
             }
             Console.WriteLine();
+            listints.Reverse();
+            Console.WriteLine("After Reversing");
+            foreach (int i in listints)
+            {
+                Console.Write(i + " ");
+            }
+            Console.WriteLine();
+
+            List<String> alphabets = new List<string>() { "I", "A ", "Z", "M", "F", "U" };
+            foreach(string j in alphabets)
+            {
+                Console.Write(j + " " );
+            }
+            Console.WriteLine();
+            alphabets.Sort();
+            Console.WriteLine("After Sorting");
+            foreach (string j in alphabets)
+            {
+                Console.Write(j + " ");
+            }
+            Console.WriteLine();
+            Console.WriteLine("After Reverse");
+            alphabets.Reverse();
+            foreach (string j in alphabets)
+            {
+                Console.Write(j + " ");
+            }
+            Console.WriteLine();
+
+
         }
     }
 
