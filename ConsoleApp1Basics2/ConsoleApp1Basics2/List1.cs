@@ -69,6 +69,7 @@ namespace ConsoleApp1Basics2
             Console.ForegroundColor = ConsoleColor.Yellow;
             List1customer L1c = Customers[0];
             Console.WriteLine($"ID is {L1c.ID}, Name is {L1c.Name} , Salary is {L1c.Salary}");
+            Console.WriteLine(Customers.IndexOf(L1c));
             Console.ResetColor();
         }
     }
