@@ -58,6 +58,18 @@ namespace ConsoleApp1Basics2
                 Console.WriteLine($"ID is {lcc.ID}, Name is {lcc.Name} and Salary is {lcc.Salary}");
             }
 
+            List1customer cust5 = new List1customer
+            {
+                ID = 202,
+                Name="Sarika",
+                Salary=3000
+            };
+
+            Customers.Insert(0, cust5);
+            Console.ForegroundColor = ConsoleColor.Yellow;
+            List1customer L1c = Customers[0];
+            Console.WriteLine($"ID is {L1c.ID}, Name is {L1c.Name} , Salary is {L1c.Salary}");
+            Console.ResetColor();
         }
     }
 
