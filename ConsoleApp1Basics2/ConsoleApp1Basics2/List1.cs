@@ -71,6 +71,30 @@ namespace ConsoleApp1Basics2
             Console.WriteLine($"ID is {L1c.ID}, Name is {L1c.Name} , Salary is {L1c.Salary}");
             Console.WriteLine(Customers.IndexOf(L1c));
             Console.ResetColor();
+            if (Customers.Contains(cust4))
+            {
+                Console.WriteLine(" Cust4 exists ");
+
+            }
+            else
+            {
+                Console.WriteLine(" NOT EXISTS");
+            }
+
+            List<int> listints = new List<int>() { 1, 8, 3, 9, 5, 2, 67, 23 };
+            Console.WriteLine("Before Sorting");
+            foreach(int i in listints)
+            {
+                Console.Write(i + " ");
+            }
+            listints.Sort();
+            Console.WriteLine();
+            Console.WriteLine("After Sorting");
+            foreach (int i in listints)
+            {
+                Console.Write(i + " ");
+            }
+            Console.WriteLine();
         }
     }
 
